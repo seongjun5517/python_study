@@ -1,0 +1,48 @@
+아나콘다 설치 후 conda 라이브러리 업데이트하기 
+>conda update -n base conda
+
+가상환경 만들기
+>conda create -n 가상환경이름 python=파이썬버전(주로 3.10버전)
+
+base 가상환경에서 다른 가상환경으로 들어가기
+>conda activate 가상환경이름
+
+가상환경 생성시 최초에 한번 pip 업그레이드 하기
+>python -m pip install --upgrade pip
+
+가상환경 빠져나가기
+>conda deactivate
+
+생성되어있는 가상환경 목록확인
+>conda env list
+
+가상환경 삭제하기(가상환경 삭제는 base에서 해야함)
+>conda remove -n 가상환경이름 --all
+
+내용 지우기
+>cls
+
+새로생성한 가상환경에 설치해야 패키지(라이브러리)하는거
+>pip install ipython jupyter notebook xlrd matplotlib seaborn pyarrow openpyxl selenium folium plotly
+
+ipython -> 커널 설정
+selenium -> 데이터 수집 처리
+folium -> 지도 시각화 처리
+pandas ->데이터 행렬처리(전처리용)
+xlrd,openyxl,pyarrow -> 엑셀등 파일 처리
+
+주피터노트북 실행하기
+>jupyter notebook
+
+커널생성
+>python -m ipykernel install --user --name=가상환경이름 --display-name 커널이름
+
+커널 목록 확인하기
+>jupyter kernelspec list
+
+커맨드 환경에서 폴더이동
+>cd / (최상위 폴더로 이동)
+>dir/w (폴더,디렉토리 목록 확인)
+>cd 폴더,디렉토리 이름 (해당 폴더,디렉토리로 이동)
+
+
